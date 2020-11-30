@@ -1,0 +1,46 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "~/oF/libs/openFrameworks/ofMain.h",
+                "~/oF/libs/openFrameworks/",
+                "~/oF/libs/openFrameworks/utils",
+                "~/oF/libs/openFrameworks/../tess2/include",
+                "~/oF/libs/openFrameworks/events/",
+                "~/oF/libs/utf8/include/",
+                "~/oF/libs/glm/include/",
+                "~/oF/libs/json/include",
+                "~/oF/libs/openFrameworks/types/",
+                "~/oF/libs/openFrameworks/math/",
+                "~/oF/libs/openFrameworks/graphics",
+                "~/oF/libs/openFrameworks/communication",
+                "~/oF/libs/openFrameworks/gl/",
+                "~/oF/libs/openFrameworks/app/",
+                "~/oF/libs/openFrameworks/3d",
+                "/usr/include/cairo/",
+                "~/oF/libs/openFrameworks/sound",
+                "~/oF/libs/openFrameworks/../kiss/include/",
+                "~/oF/libs/openFrameworks/video",
+                "/usr/include/gstreamer-1.0/",
+                "/usr/include/glib-2.0/",
+                "/usr/lib/glib-2.0/include/",
+                "~/ode-0.16.2/",
+                "~/ode-0.16.2/include",
+                "~/ode-0.16.2/src/.libs",
+                "~/ode-0.16.2/drawstuff/src/.libs",
+                "${workspaceRoot}",
+                "${workspaceFolder}/src/",
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/libs/OpenVR/headers",
+                "~/oF/addons/ofxOpenVR/src/"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c18",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}
