@@ -33,7 +33,10 @@
                 "${workspaceFolder}/src/",
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/libs/OpenVR/headers",
-                "~/oF/addons/ofxOpenVR/src/"
+                "~/oF/addons/ofxOpenVR/src/",
+                "/usr/include/",
+                "/usr/include/boost/predef/os",
+                "${workspaceFolder}/libs/OpenVR/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",
