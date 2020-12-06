@@ -3,7 +3,7 @@
         {
             "name": "Linux",
             "includePath": [
-                "~/oF/libs/openFrameworks/ofMain.h",
+                "~/oF/libs/openFrameworks/",
                 "~/oF/libs/openFrameworks/",
                 "~/oF/libs/openFrameworks/utils",
                 "~/oF/libs/openFrameworks/../tess2/include",
@@ -36,7 +36,9 @@
                 "~/oF/addons/ofxOpenVR/src/",
                 "/usr/include/",
                 "/usr/include/boost/predef/os",
-                "${workspaceFolder}/libs/OpenVR/**"
+                "${workspaceFolder}/libs/OpenVR/**",
+                "/usr/include/qt",
+                "${workspaceFolder}/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/clang",

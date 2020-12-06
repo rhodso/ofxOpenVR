@@ -153,18 +153,20 @@ else()
 endif()
 set(SDL2_INCLUDE_DIR ${THIRDPARTY_DIR}/sdl2-2.0.3/include)
 
-## Qt 5
-## Important :
-## Remember to set CMAKE_PREFIX_PATH to Qt5 cmake modules path for your targeted platform
-## or set them here manually (not portable).
-# if(CMAKE_HOST_UNIX)
-#   list(APPEND CMAKE_PREFIX_PATH "/opt/Qt/5.6/gcc_64/lib/cmake")
-# else()
-#     if(${PLATFORM} MATCHES 64)
-#       set(suffix "_64")
-#     endif
-#   list(APPEND CMAKE_PREFIX_PATH "C:/Qt/5.6/msvc2013${suffix}/lib/cmake")
-# endif()
+# FIXME: Need to include the directory /usr/include/qt
+
+# Qt 5
+# Important :
+# Remember to set CMAKE_PREFIX_PATH to Qt5 cmake modules path for your targeted platform
+# or set them here manually (not portable).
+if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+  list(APPEND CMAKE_PREFIX_PATH "/usr/include/qt")
+else()
+    if(${PLATFORM} MATCHES 64)
+      set(suffix "_64")
+    endif
+  list(APPEND CMAKE_PREFIX_PATH "C:/Qt/5.6/msvc2013${suffix}/lib/cmake")
+endif()
 
 # Set CMake to run moc automatically has needed.
 set(CMAKE_AUTOMOC ON)
